@@ -9,7 +9,7 @@ const App = () => (
     <Header />
     <div>Name: host</div>
     <div>Framework: react</div>
-    <div>Language: TypeScript</div>
+    <div>Language: TypeScripts</div>
     <div>CSS: Empty CSS</div>
   </div>
 );
