@@ -3,9 +3,9 @@ name: deploy-host
 on:
   push:
     branches:
-      -main
+      - master
     paths:
-      -'packages/host/**'
+      - "packages/host/**"
 
 defaults:
   run:
@@ -22,6 +22,6 @@ jobs:
 
       - uses: chrislennon/action-aws-cli@v1.1
       - run: aws s3 sync dist s3://${{ secrets.AWS_S3_BUCKET_NAME }}/host/latest
-          env:
-            AWS_ACCCESS_KEY_ID: ${{ secrets.AWS_ACCESSS_KEY_ID }}
-            AWS_SECRET_ACCCESS_KEY: ${{ secrets.AWS_SECRET_ACCESSS_KEY }}
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
