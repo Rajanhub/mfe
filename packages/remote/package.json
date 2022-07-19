@@ -2,7 +2,8 @@
   "name": "remote",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack serve --open --config config/webpack.dev.js"
+    "start": "webpack serve --open --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js"
   },
   "license": "MIT",
   "author": {
