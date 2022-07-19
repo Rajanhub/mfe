@@ -3,7 +3,7 @@ name: deploy-host
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - "packages/host/**"
 
