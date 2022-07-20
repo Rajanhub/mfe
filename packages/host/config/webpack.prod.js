@@ -15,7 +15,7 @@ const prodConfig = {
     new ModuleFederationPlugin({
       name: "host",
       remotes: {
-        ui: `remote@${domain}/remote/remoteEntry.js`,
+        ui: `remote@${domain}/remote/latest/remoteEntry.js`,
       },
       exposes: {},
       shared: {
