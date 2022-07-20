@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-//import Header from "./Header";
+import Header from "./Header";
 
 import "./index.css";
 
 const App = () => (
   <div className="container">
-    {/* <Header /> */}
+    <Header />
     <div>Name: host</div>
     <div>Framework: react</div>
     <div>Language: TypeScripts</div>
