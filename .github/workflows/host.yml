@@ -29,3 +29,6 @@ jobs:
 
       - name: Copy files to the s3 website content bucket
         run: aws s3 sync dist s3://${{ secrets.AWS_S3_BUCKET_NAME }}/host/latest
+
+      - name: running invalidation
+        run: aws cloudfront create-invalidation --distribution-id ${{secrets.AWS_DISTRIBUTION_ID}} --path "/host/latest/index.html"
