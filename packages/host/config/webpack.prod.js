@@ -16,7 +16,7 @@ const prodConfig = {
       name: "host",
       filename: "remoteEntry.js",
       remotes: {
-        ui: `remote@${domain}/remote/latest/remote.7ababeb1286c4859bd91.js`,
+        ui: `remote@${domain}/remote/latest/remoteEntry.js`,
       },
       exposes: {},
       shared: {

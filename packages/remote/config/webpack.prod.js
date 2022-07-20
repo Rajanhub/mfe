@@ -14,6 +14,7 @@ const prodConfig = {
   plugins: [
     new ModuleFederationPlugin({
       name: "remote",
+      filename: "remoteEntry.js",
       remotes: {},
       exposes: {
         "./header": "./src/App",
