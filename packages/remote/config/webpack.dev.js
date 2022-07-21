@@ -10,6 +10,11 @@ const devConfig = {
     port: 3000,
     historyApiFallback: { index: "index.html" },
   },
+  
+  output: {
+    publicPath: "http://localhost:3000/",
+  },
+  
   plugins: [
     new ModuleFederationPlugin({
       name: "remote",
